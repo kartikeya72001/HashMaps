@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1588539341 source:c:\users\karti\desktop\codes\cpp\oops\hashmaps\main.cpp
+	<iostream>
+	"HashMap.h"
+
+1588539386 c:\users\karti\desktop\codes\cpp\oops\hashmaps\hashmap.h
+	<iostream>
+	<string>
+
