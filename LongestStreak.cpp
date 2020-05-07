@@ -2,7 +2,7 @@
 #include <unordered_set>
 using namespace std;
 
-int longestStreak(int *arr, int count)
+int longestStreak(int *arr, int count) //To obtain the longest trail of numbers in O(n)
 {
     unordered_set<int> s;
     for (size_t i = 0; i < count; i++) {
