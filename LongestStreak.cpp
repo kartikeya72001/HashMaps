@@ -1,8 +1,6 @@
 #include <iostream>
 #include <unordered_set>
-using namespace std {
-
-} /* std */
+using namespace std;
 
 int longestStreak(int *arr, int count)
 {
@@ -10,18 +8,19 @@ int longestStreak(int *arr, int count)
     for (size_t i = 0; i < count; i++) {
         s.insert(arr[i]);
     }
+    int ans = 0;
     for (size_t i = 0; i < count; i++) {
         if (s.find(arr[i]-1) != s.end()) {
             continue;
         }
         else{
-            n = 0;
+            int n = 0;
             int x = arr[i];
             while (s.find(x) != s.end()) {
                 n++;
                 x++;
             }
-            ans = max(ans,count);
+            ans = max(ans,n);
         }
     }
     return ans;
